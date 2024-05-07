@@ -1,4 +1,13 @@
 
 body{
-	background-color: red;
+	background-color: pink;
+}
+p{
+	color: white;
+	text-decoration: underline
+}
+
+h1{
+	color: blue;
+	font-size: 50px;
 }
