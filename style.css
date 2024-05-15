@@ -20,24 +20,92 @@ h1{
 	/*This gives the title an underline*/
 	text-decoration: underline;
 }
-/*This is the styling of the heading 2*/
 
+
+/*This is the styling of the heading 2*/
 h2{
 	color: darkgrey;
 	font-size: 35px;
 	/* This makes the text italic*/
 	font-style: italic;
 }
+
 /*This is the styling of the divs*/
 
-div {
-	/*This makes the display a block so that the width etc. can be edited while allowing multiple blocks to be on the same line*/
-  display: inline-block;
-  background: lightblue;
-	/* This will set the gap between the text and the edge of the block to 20px*/
-  margin: 20px;
-	/*This sets the gaps between the blocks to 20px*/
-  padding: 20px;
-	/* This sets the width of each block to 80% of the screen width*/
-	width: 90%;
+
+
+/*This is the styling of the off-screen menu in a class*/
+.off-screen-menu{
+	background-color: lightgrey;
+	/*Sets the height to be 100% of the visible height of the screen*/
+	height: 100vh;
+	width:100%;
+	max-width: 600px;
+	position:fixed;
+	top:0;
+	right:-600px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	/*This sets the font-size to be 3 times of the root font size*/
+	font-size: 3rem;
+	/*Controls animation speed*/
+	transition: .3s ease;
+}
+
+.off-screen-menu.active{
+	right:0;
+}
+
+
+nav{
+	padding:1rem;
+	display:flex;
+	background-color: darkgrey;
+}
+
+.ham-menu{
+	height:50px;
+	width:50px;
+	margin-left:auto;
+	position: relative;
+}
+
+
+.ham-menu span{
+	height:5px;
+	width:100%;
+	background-color: white;
+	border-radius: 25px;
+	position:absolute;
+	top: 50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	transition: .3s ease;
+}
+
+/*This targets the first span of the hamburger menu and places it slightly higher*/
+.ham-menu span:nth-child(1){
+	top:20%;
+}
+/*This targets the third span of the hamburger menu and places it slightly lower*/
+
+.ham-menu span:nth-child(3){
+	top:80%;
+}
+
+/*This targets the first span of the hamburger menu when it's active (which occurs when the menu has been clicked, causing it to rotate to form the first part of the X*/
+
+.ham-menu.active span:nth-child(1){
+	top:50%;
+	transform:translate(-50%, -50%) rotate(45deg);
+}
+/*Causes the middle line of the hamburger menu to disappear when menu is clicked*/
+.ham-menu.active span:nth-child(2){
+	opacity:0;
+}
+/*Causes the bottom line to rotate to form the second part of the line*/
+.ham-menu.active span:nth-child(3){
+	top:50%;
+	transform:translate(-50%, -50%) rotate(-45deg);
 }
