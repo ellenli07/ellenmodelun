@@ -36,14 +36,20 @@ h2{
 
 /*This is the styling of the off-screen menu in a class*/
 .off-screen-menu{
+	/*sets the background colour to lightgrey*/
 	background-color: lightgrey;
 	/*Sets the height to be 100% of the visible height of the screen*/
 	height: 100vh;
+	/*sets the width to 100%, and the max-width is 600px*/
 	width:100%;
 	max-width: 600px;
+	/*keeps the menu in the same place, even if the user scrolls*/
 	position:fixed;
+	/*keeps the menu at the top*/
 	top:0;
+	/*positions the right to -600px, so that it's offscreen*/
 	right:-600px;
+	/*this aligns the child elements automatically to the cetreinto columns with automatic widths and heights*/
 	display:flex;
 	flex-direction:column;
 	align-items:center;
@@ -54,33 +60,48 @@ h2{
 }
 
 .off-screen-menu.active{
+	/*puts the off-screen menu back on screen when the ham menu is pressed*/
 	right:0;
 }
 
-
+/*changes the styling of the nav bar at the top of the page*/
 nav{
+	/*sets the padding to the root padding (which sets the gap between the edge fo the nav and elements inside of it)*/
 	padding:1rem;
+	/*aligns the child elements  automatically*/
 	display:flex;
+	/*sets the colour of the nav bar to dark grey*/
 	background-color: darkgrey;
 }
 
+/*This sets the ham menu (this is actually an invisible square that contains the spans*/
 .ham-menu{
+	/*sets height and width to 50px*/
 	height:50px;
 	width:50px;
+	/*sets the bar to the right of the screen automatically*/
 	margin-left:auto;
+	/*the position will change when the user scrolls*/
 	position: relative;
 }
 
-
+/*sets the styling of the white ham menu bars*/
 .ham-menu span{
+	/*sets height to 5px*/
 	height:5px;
+	/*sets width to width of the ham menu box*/
 	width:100%;
+	/*sets colour to white*/
 	background-color: white;
+	/*rounds the lines*/
 	border-radius: 25px;
-	position:absolute;
+	/*sets the lines to not move when user scrolls*/
+	position:absolute
+	/*sets position within the ham menu*/
 	top: 50%;
 	left:50%;
 	transform:translate(-50%, -50%);
+	/*sets smooth animation when the spans move when clicked*/
 	transition: .3s ease;
 }
 
