@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*define own css classes here*/
+
+/*This is the styling of the off-screen menu in a class*/
+.off-screen-menu{
+	/*sets the background colour to lightgrey*/
+	background-color: #B4C5E4;
+	/*stes the colour of the text*/
+	color:#f7f8ff;
+	/*Sets the height to be 100% of the visible height of the screen*/
+	height: 100vh;
+	/*sets the width to 100%, and the max-width is 600px*/
+	width:100%;
+	max-width: 600px;
+	/*keeps the menu in the same place, even if the user scrolls*/
+	position:fixed;
+	/*keeps the menu at the top*/
+	top:0;
+	/*positions the right to -600px, so that it's offscreen*/
+	right:-600px;
+	/*this aligns the child elements automatically to the cetreinto columns with automatic widths and heights*/
+	display:flex;
+	flex-direction:column;
+	align-items:left;
+	padding: 20vh;
+	/*This sets the font-size to be 3 times of the root font size*/
+	font-size: 2rem;
+	/*Controls animation speed*/
+	transition: .3s ease;
+}
+
+/*styles the offscreen menu when it is active/clicked*/
+.off-screen-menu.active{
+	/*puts the off-screen menu back on screen when the ham menu is pressed*/
+	right:0;
+}
+
+/*changes the styling of the nav bar at the top of the page*/
+nav{
+	/*sets the padding to the root padding (which sets the gap between the edge fo the nav and elements inside of it)*/
+	padding:1rem;
+	/*aligns the child elements  automatically*/
+	display:flex;
+	/*sets the colour of the nav bar to dark grey*/
+	background-color: #2E6ED5;
+}
+
+/*This sets the ham menu (this is actually an invisible square that contains the spans*/
+.ham-menu{
+	/*sets height and width to 50px*/
+	height:50px;
+	width:50px;
+	/*sets the bar to the right of the screen automatically*/
+	margin-left:auto;
+	/*the position will change when the user scrolls*/
+	position: relative;
+}
+
+/*sets the styling of the white ham menu bars*/
+.ham-menu span{
+	/*sets height to 5px*/
+	height:5px;
+	/*sets width to width of the ham menu box*/
+	width:100%;
+	/*sets colour to white*/
+	background-color: #f7f8ff;
+	/*rounds the lines*/
+	border-radius: 25px;
+	/*sets the lines to not move when user scrolls*/
+	position:absolute;
+	/*sets position within the ham menu*/
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	/*sets smooth animation when the spans move when clicked*/
+	transition: .3s ease;
+	display:flex;
+}
+
+/*This targets the first span of the hamburger menu and places it slightly higher*/
+.ham-menu span:nth-child(1){
+	top:20%;
+}
+
+/*This targets the third span of the hamburger menu and places it slightly lower*/
+.ham-menu span:nth-child(3){
+	top:80%;
+}
+
+/*This targets the first span of the hamburger menu when it's active (which occurs when the menu has been clicked, causing it to rotate to form the first part of the X*/
+
+.ham-menu.active span:nth-child(1){
+	top:50%;
+	transform:translate(-50%, -50%) rotate(45deg);
+}
+/*Causes the middle line of the hamburger menu to disappear when menu is clicked*/
+.ham-menu.active span:nth-child(2){
+	opacity:0;
+}
+/*Causes the bottom line to rotate to form the second part of the line*/
+.ham-menu.active span:nth-child(3){
+	top:50%;
+	transform:translate(-50%, -50%) rotate(-45deg);
+}
+
+body{
+	background-color:#f7f8ff; 
+	font-family: "Poppins";
+}
