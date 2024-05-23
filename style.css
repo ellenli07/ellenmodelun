@@ -575,6 +575,10 @@ video {
   display: inline-block;
 }
 
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
@@ -619,11 +623,6 @@ video {
   border-radius: 0.5rem;
 }
 
-.border-zinc-950 {
-  --tw-border-opacity: 1;
-  border-color: rgb(9 9 11 / var(--tw-border-opacity));
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -663,6 +662,10 @@ video {
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .opacity-0 {
@@ -791,6 +794,8 @@ nav{
   top:50%;
   transform:translate(-50%, -50%) rotate(-45deg);
 }
+
+/*Sets the styling for the body-- offwhite background, and the font-family is set to Poppins.*/
 
 body{
   background-color:#f7f8ff;

@@ -35,11 +35,18 @@
 				</div>
 			</nav>
 
-			<!-- this makes a big heading -->
+			<!-- this makes a big heading that's centred in the middle of the page-->
 			<div class= "flex justify-center pt-20">
 				<h1 class="text-5xl">Partnerships</h1>
 			</div>
+			<!--Makes a div for the logos, justified in the middle, top-margin of 10 -->
 			<div class="flex justify-center mt-10">
+				<!--
+					This adds the images for the icons. href is the link itll lead to when clicked, class styles it to have height and width of 40, 
+					rounded-lg rounds the corners, object-cover sets it so that larger images will crop instead of stretch, 
+					inline block allows multiple images on the same line, mx-10 sets the horizontal margin to 10, and hover:cursor-pointer sets the cursor to pointing when user hovers over the icons.
+					src is the image source, and alt is what a screenreader will read out/what will show when the image cannot load.
+				-->
 				<a href="un_youth_partnership.htm"><img class="h-40 w-40 rounded-lg object-cover inline-block mx-10 hover:cursor-pointer" src="images/un_youth.jpeg" alt="UN Youth New Zealand Logo" ></a>
 				<a href="una_partnership.htm"><img class="h-40 w-40 rounded-lg object-cover inline-block mx-10 hover:cursor-pointer" src="images/una_nz.png" alt="UNA New Zealand Logo" ></a>
 			</div>
