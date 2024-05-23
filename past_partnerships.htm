@@ -18,16 +18,16 @@
 				<!-- makes an unordered list -->
 				<ul>
 					<!-- links to other pages of the website -->
-					<li><a href="index.htm">Home</a></li>
-					<li><a href="our_story.htm">Our Story</a></li>
-					<li><a href="gallery.htm">Gallery</a></li>
-                    <li><a href="contact.htm">Contact</a></li>
-
+					<li class="hover:underline"><a href="index.htm">Home</a></li>
+					<li class="hover:underline"><a href="our_story.htm">Our Story</a></li>
+					<li class="hover:underline"><a href="past_partnerships.htm">Partnerships</a></li>
+					<li class="hover:underline"><a href="gallery.htm">Gallery</a></li>
+					<li class="hover:underline"><a href="contact.htm">Contact</a></li>
 				</ul>
 			</div>
 			<!-- this is the navigation bar, which is a hamburger button that will open the menu-->
 			<nav>
-				<div class="ham-menu">
+				<div class="ham-menu hover:cursor-pointer">
 					<!-- each span is a line of the hamburger menu-->
 					<span></span>
 					<span></span>
@@ -36,9 +36,15 @@
 			</nav>
 
 			<!-- this makes a big heading -->
-			<div class= "flex items-center justify-center h-screen">
-				<h1 class="text-4xl">Partnerships</h1>
+			<div class= "flex justify-center pt-20">
+				<h1 class="text-5xl">Partnerships</h1>
 			</div>
+			<div class="flex justify-center mt-10">
+				<a href="un_youth_partnership.htm"><img class="h-40 w-40 rounded-lg object-cover inline-block mx-10 hover:cursor-pointer" src="images/un_youth.jpeg" alt="UN Youth New Zealand Logo" ></a>
+				<a href="una_partnership.htm"><img class="h-40 w-40 rounded-lg object-cover inline-block mx-10 hover:cursor-pointer" src="images/una_nz.png" alt="UNA New Zealand Logo" ></a>
+			</div>
+			
+			
 			<!--This is the link to the javascript code that will make the button work-->
 			<script src="app.js"></script>
 	</body>

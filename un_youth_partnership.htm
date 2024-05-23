@@ -4,17 +4,16 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Document</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-	<!-- this is the navigation menu, with links to the other pages of the website-->
+		<!-- this is the navigation menu, with links to the other pages of the website-->
 			<!-- this makes a div, which separates each section into their own element-->
 
-			<div class="off-screen-menu z-50">
+			<div class="off-screen-menu">
 				<!-- makes an unordered list -->
 				<ul>
 					<!-- links to other pages of the website -->
@@ -27,21 +26,19 @@
 			</div>
 			<!-- this is the navigation bar, which is a hamburger button that will open the menu-->
 			<nav>
-				<div class="ham-menu z-50 hover:cursor-pointer">
+				<div class="ham-menu hover:cursor-pointer">
 					<!-- each span is a line of the hamburger menu-->
 					<span></span>
 					<span></span>
 					<span></span>
 				</div>
 			</nav>
-
-			<!-- this makes a big heading, with a slide-in animation. pt-20 sets the padding above to 20.  -->
-			<div class= "animate-slidein opacity-0 [--slidein-delay:300ms] flex pt-20 justify-center">
-				<h1 class="text-5xl">Our Story</h1>
+			<!-- this makes a big heading div flex makes it alignable, items-center centres the items vertically, justify-centre centres the items horizontally, h-screen makes the div the height of the screen's height-->
+			<div class= "flex items-center justify-center h-screen">
+				<!--This makes the big heading text, text-6xl sets the size-->
+				<h1 class="text-6xl"> UN Youth</h1>
 			</div>
-			<!--This makes the small block of text. p sets the padding around all sides, while pt overrides this to make the padding at the top slightly larger. The delay is slightly after the title so it slides in later-->
-			<div class= " animate-slidein opacity-0 [--slidein-delay:500ms] flex text-center p-5 pt-7 justify-center">
-				<p class="text-3xl ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
 			</div>
 			<!--This is the link to the javascript code that will make the button work-->
 			<script src="app.js"></script>

@@ -554,12 +554,57 @@ video {
   --tw-contain-style:  ;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }
 
+.h-40 {
+  height: 10rem;
+}
+
 .h-screen {
   height: 100vh;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slidein {
+  animation: slidein 1s ease var(--slidein-delay, 0) forwards;
 }
 
 .items-center {
@@ -570,9 +615,66 @@ video {
   justify-content: center;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.border-zinc-950 {
+  --tw-border-opacity: 1;
+  border-color: rgb(9 9 11 / var(--tw-border-opacity));
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pt-7 {
+  padding-top: 1.75rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.\[--slidein-delay\:300ms\] {
+  --slidein-delay: 300ms;
+}
+
+.\[--slidein-delay\:500ms\] {
+  --slidein-delay: 500ms;
 }
 
 /*define own css classes here*/
@@ -693,4 +795,12 @@ nav{
 body{
   background-color:#f7f8ff;
   font-family: "Poppins";
+}
+
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
 }
