@@ -802,6 +802,91 @@ body{
   font-family: "Poppins";
 }
 
+/*sets the styling for the slider class*/
+
+.slider{
+  /*items move relative to position*/
+  position: relative;
+  /*sets the width of the slider to 70% of the width of the page*/
+  width: 70%;
+  /*centres the slider, while setting the to and bottom margin to 2 rem*/
+  margin: 2rem auto;
+  /*if images are too large, the overflow will be hidden*/
+  overflow: hidden;
+}
+
+/*sets the styling of the images in the slider*/
+
+.slider img{
+  /*sets width to 100*/
+  width:100%;
+  /*images are not displayed*/
+  display:none;
+}
+
+/*displays the image to show/display as a block if it has this class*/
+
+img.displaySlide{
+  display:block;
+  /*uses the fade animation*/
+  animation-name:fade;
+  /*sets the duration of the animation to 1.5s*/
+  animation-duration:1.5s;
+}
+
+/*select all buttons in the slider*/
+
+.slider button{
+  /*positiions relative to parent*/
+  position:absolute;
+  /*will be positioned in the middle on the y axis (aka middle of the height of the slider*/
+  top:50%;
+  /*positions the centre of the button at the middle of the height*/
+  transform:translateY(-50%);
+  /*sets the font to 2rem (root element)*/
+  font-size: 2rem;
+  /*adds padding aka room around the arrows in the boxes*/
+  padding: 10px 15px;
+  /*sets the background colour to grey*/
+  background-color: rgb(126, 126, 126);
+  /*sets the arrows themselves to white*/
+  color:white;
+  /*removes the border of the buttons*/
+  border:none;
+  /*makes the cursor a pointer when hovering*/
+  cursor: pointer;
+}
+
+/*selects the prev class*/
+
+.prev{
+  /*aligns the previous button on the very left*/
+  left:0;
+}
+
+/*selects the next class*/
+
+.next{
+  /*aligns the next button to the very right*/
+  right:0;
+}
+
+/*sets animation called fade*/
+
+@keyframes fade{
+  /*starts transparent*/
+
+  from {
+    opacity: .5
+  };
+
+  /*ends opaque*/
+
+  to {
+    opacity: 1
+  };
+}
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }

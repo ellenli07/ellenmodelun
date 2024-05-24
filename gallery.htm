@@ -14,7 +14,7 @@
 	<!-- this is the navigation menu, with links to the other pages of the website-->
 			<!-- this makes a div, which separates each section into their own element-->
 
-			<div class="off-screen-menu">
+			<div class="off-screen-menu z-50">
 				<!-- makes an unordered list -->
 				<ul>
 					<!-- links to other pages of the website -->
@@ -27,7 +27,7 @@
 			</div>
 			<!-- this is the navigation bar, which is a hamburger button that will open the menu-->
 			<nav>
-				<div class="ham-menu hover:cursor-pointer">
+				<div class="ham-menu hover:cursor-pointer z-50">
 					<!-- each span is a line of the hamburger menu-->
 					<span></span>
 					<span></span>
@@ -36,9 +36,24 @@
 			</nav>
 
 			<!-- this makes a big heading -->
-			<div class= "flex items-center justify-center h-screen">
-				<h1 class="text-4xl">Gallery</h1>
+			<div class= "flex justify-center pt-20">
+				<h1 class="text-6xl">Gallery</h1>
 			</div>
+			<!--sets a div with a class for the slider-->
+			<div class="slider">
+				<!--sets a div with a class for the individual slides-->
+				<div class = "slides">
+					<!--the images thatwill be put in the slides-->
+					<img class="slide" src="images/image_1.jpg" alt="image number 1">
+					<img class="slide" src="images/image_2.jpg" alt="image number 2">
+					<img class="slide" src="images/image_3.jpg" alt="image number 3">
+				</div>
+				<!--the left arrow button. the numbers are stand for a unicode character-->
+				<button class="prev" onclick="prevSlide()">&#10094</button>
+				<!--the right arrow button-->
+				<button class="next" onclick="nextSlide()">&#10095</button>
+			</div>
+
 			<!--This is the link to the javascript code that will make the button work-->
 			<script src="app.js"></script>
 	</body>
