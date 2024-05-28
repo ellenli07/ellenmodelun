@@ -34,12 +34,17 @@
 				</div>
 			</nav>
 
-			<!-- this makes a big heading -->
-			<div class= "flex justify-center pt-20">
+			<!-- this makes a big heading with a slide-in animation, opacity set to 0 at first so it's not showing. slideindelay sets the delay,  flex makes it alignable, justify-centre centres the items horizontally-->
+
+			<div class= "animate-slidein opacity-0 [--slidein-delay:300ms] flex justify-center pt-20">
 				<h1 class="text-6xl">Contact</h1>
 			</div>
-			<div class= "flex justify-center pt-20">
-				<p class="text-3xl">Gmail: wqldksnk@gmail.com <br> Phone: 0210183728</p>
+			<!--these are divs for the contact info, font is smaller and slide in delay is slightly staggered-->
+			<div class= "animate-slidein opacity-0 [--slidein-delay:500ms] flex justify-center pt-20 w-screen">
+				<p class="text-3xl">Gmail: wqldksnk@gmail.com </p>
+			</div>
+			<div class= "animate-slidein opacity-0 [--slidein-delay:700ms] flex justify-center pt-20 w-screen">
+				<p class="text-3xl"> Phone: 0210183728</p>
 			</div>
 			<!--This is the link to the javascript code that will make the button work-->
 			<script src="app.js"></script>

@@ -35,12 +35,13 @@
 				</div>
 			</nav>
 
-			<!-- this makes a big heading -->
-			<div class= "flex justify-center pt-20">
+			<!-- this makes a big heading with a slide-in animation, opacity set to 0 at first so it's not showing. slideindelay sets the delay,  flex makes it alignable, justify-centre centres the items horizontally-->
+			<div class= "animate-slidein opacity-0 [--slidein-delay:300ms] flex justify-center pt-20">
+				<!-- text-6xl sets font size-->
 				<h1 class="text-6xl">Gallery</h1>
 			</div>
 			<!--sets a div with a class for the slider-->
-			<div class="slider">
+			<div class="slider animate-slidein opacity-0 [--slidein-delay:500ms]">
 				<!--sets a div with a class for the individual slides-->
 				<div class = "slides">
 					<!--the images thatwill be put in the slides-->

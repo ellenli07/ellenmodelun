@@ -13,7 +13,7 @@
 		<!-- this is the navigation menu, with links to the other pages of the website-->
 			<!-- this makes a div, which separates each section into their own element-->
 
-			<div class="off-screen-menu">
+			<div class="off-screen-menu z-50">
 				<!-- makes an unordered list -->
 				<ul>
 					<!-- links to other pages of the website. when hovering, the text will get an underline -->
@@ -33,13 +33,12 @@
 					<span></span>
 				</div>
 			</nav>
-			<!-- this makes a big heading div flex makes it alignable, items-center centres the items vertically, justify-centre centres the items horizontally, h-screen makes the div the height of the screen's height-->
-			<div class= "flex items-center justify-center h-screen">
+			<!-- this makes a big heading div: animate-slidein sets the animation, opacity-0 sets the opacity to 0, and slideindelay sets the delay of the text animation, flex makes it alignable, items-center centres the items vertically, justify-centre centres the items horizontally, h-screen makes the div the height of the screen's height, text-center aligns the text to the middle-->
+			<div class= "animate-slidein opacity-0 [--slidein-delay:300ms] flex items-center justify-center h-screen text-center">
 				<!--This makes the big heading text, text-6xl sets the size-->
 				<h1 class="text-6xl"> Model United Nations</h1>
 			</div>
 
-			</div>
 			<!--This is the link to the javascript code that will make the button work-->
 			<script src="app.js"></script>
 	</body>
