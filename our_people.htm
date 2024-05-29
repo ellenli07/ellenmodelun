@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+	<!-- this is the navigation menu, with links to the other pages of the website-->
+			<!-- this makes a div, which separates each section into their own element. the div has the class for the off-screen menu-->
+
+			<div class="off-screen-menu">
+				<!-- makes an unordered list -->
+				<ul>
+					<!-- links to other pages of the website -->
+					<li class="hover:underline"><a href="index.htm">Home</a></li>
+					<li class="hover:underline"><a href="our_story.htm">Our Story</a></li>
+					<li class="hover:underline"><a href="our_people.htm">Our People</a></li>
+					<li class="hover:underline"><a href="past_partnerships.htm">Partnerships</a></li>
+					<li class="hover:underline"><a href="gallery.htm">Gallery</a></li>
+					<li class="hover:underline"><a href="contact.htm">Contact</a></li>
+				</ul>
+			</div>
+			<!-- this is the navigation bar, which is a hamburger button that will open the menu-->
+			<nav>
+				<div class="ham-menu z-50 hover:cursor-pointer">
+					<!-- each span is a line of the hamburger menu-->
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</nav>
+			
+			<!-- this makes a big heading, with a slide-in animation, opacity set to 0 at first so it's not showing. slideindelay sets the delay. pt-20 sets the padding above to 20.  -->
+			<div class= "animate-slidein opacity-0 [--slidein-delay:300ms] flex mt-20 justify-center">
+				<h1 class="text-5xl">Our People</h1>
+			</div>
+			<!--This makes a subheading for the HSA secccctoin-->
+			<div class= "animate-slidein opacity-0 [--slidein-delay:500ms] flex mt-20 justify-center">
+				<h2 class="text-4xl">High School Ambassadors</h2>
+			</div>
+			
+			<!--a div for the profils of the HSA, flex and justify-center put the content in the centre, while flex-wrap makes the divs go onto the next line when there isn't enough space. -->
+			<div class="flex flex-wrap justify-center animate-slidein opacity-0 [--slidein-delay:500ms] ">
+				<!--The individual divs for the profiles. Inline-block allows the divs to be on the same line, mx-10 and mt-10 set the horizontal and top margins respectively, rounded-lg rounds the corners, p-6 sets the padding (space between the edge and the content of the div), h- and w- set the height and widths. bg- sets the background colour of the div. -->
+				<div class= " inline-block mx-10 mt-10 rounded-lg p-6 h-72 w-52  bg-slate-600">
+					<img class="h-40 w-40 rounded-lg object-cover mx-auto" src="images/image_2.jpg" alt="Profile picture placeholder" >
+					<p class="white-text text-center mt-3 ">Lorem Ipsum</p>
+				</div>
+				<div class= "inline-block  mx-10 mt-10 rounded-lg p-6 h-72 w-52 bg-slate-600">
+					<img class="h-40 w-40 rounded-lg object-cover mx-auto" src="images/image_2.jpg" alt="Profile picture placeholder" >
+					<p class="white-text text-center mt-3 ">Lorem Ipsum</p>
+				</div>
+				<div class= "inline-block  mx-10 mt-10 rounded-lg p-6 h-72 w-52 bg-slate-600">
+					<img class="h-40 w-40 rounded-lg object-cover mx-auto" src="images/image_2.jpg" alt="Profile picture placeholder" >
+					<p class="white-text text-center mt-3 ">Lorem Ipsum</p>
+				</div>
+				<div class= "inline-block   mx-10 mt-10 rounded-lg p-6 h-72 w-52 bg-slate-600">
+					<img class="h-40 w-40 rounded-lg object-cover mx-auto" src="images/image_2.jpg" alt="Profile picture placeholder" >
+					<p class="white-text text-center mt-3 ">Lorem Ipsum</p>
+				</div>
+				
+			</div>
+
+			<div class= "animate-slidein opacity-0 [--slidein-delay:500ms] flex mt-20 justify-center">
+				<h2 class="text-4xl">Staff</h2>
+			</div>
+
+			<div class="flex flex-wrap justify-center animate-slidein opacity-0 [--slidein-delay:500ms]">
+				<!--This makes the small block of text. p sets the padding around all sides, while pt overrides this to make the padding at the top slightly larger. The delay is slightly after the title so it slides in later-->
+				<div class= "inline-block   mx-10 mt-10 rounded-lg p-6 h-72 w-52 bg-slate-600">
+					<img class="h-40 w-40 rounded-lg object-cover mx-auto" src="images/image_2.jpg" alt="Profile picture placeholder" >
+					<p class="white-text text-center mt-3 ">Lorem Ipsum</p>
+				</div>
+				<div class= "inline-block   mx-10 mt-10 rounded-lg p-6 h-72 w-52 bg-slate-600">
+					<img class="h-40 w-40 rounded-lg object-cover mx-auto" src="images/image_2.jpg" alt="Profile picture placeholder" >
+					<p class="white-text text-center mt-3 ">Lorem Ipsum</p>
+				</div>
+				
+			</div>
+			<!--This is the link to the javascript code that will make the button work-->
+			<script src="app.js"></script>
+	</body>
+</html>
