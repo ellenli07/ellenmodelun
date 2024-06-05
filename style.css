@@ -554,10 +554,6 @@ video {
   --tw-contain-style:  ;
 }
 
-.invisible {
-  visibility: hidden;
-}
-
 .z-50 {
   z-index: 50;
 }
@@ -570,6 +566,10 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mt-0 {
+  margin-top: 0px;
 }
 
 .mt-10 {
@@ -652,21 +652,12 @@ video {
   justify-content: center;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
-.rounded {
-  border-radius: 0.25rem;
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
 
-.bg-slate-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .object-cover {
@@ -866,8 +857,8 @@ body{
 .slider{
   /*items move relative to position*/
   position: relative;
-  /*sets the width of the slider to 70% of the width of the page*/
-  width: 70%;
+  /*sets the width of the slider to 85% of the width of the page*/
+  width: 85%;
   /*centres the slider, while setting the to and bottom margin to 2 rem*/
   margin: 2rem auto;
   /*if images are too large, the overflow will be hidden*/
