@@ -948,3 +948,11 @@ img.displaySlide{
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
+
+.hover\:opacity-75:hover {
+  opacity: 0.75;
+}
+
+.hover\:opacity-70:hover {
+  opacity: 0.7;
+}
