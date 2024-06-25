@@ -8,7 +8,6 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 	<!-- this is the navigation menu, with links to the other pages of the website-->
@@ -48,18 +47,28 @@
 			<!--a div for the profiles of the HSA, flex and justify-center put the content in the centre, while flex-wrap makes the divs go onto the next line when there isn't enough space. -->
 			<div class="flex flex-wrap justify-center animate-slidein opacity-0 [--slidein-delay:500ms] ">
 				<!--The individual divs for the profiles. Inline-block allows the divs to be on the same line, mx-10 and mt-10 set the horizontal and top margins respectively, p-6 sets the padding (space between the edge and the content of the div), h- and w- set the height and widths.. -->
-				<div class= "inline-block   mx-10 mt-10 p-6 h-72 w-52">
-					<!--h- and w- sets the size of the div. rounded-full makes it a circle, object-cover sets it so that images in the div don't stretch, -->
-					<img class="h-40 w-40 rounded-full object-cover mx-auto" src="images/image_1.jpg" alt="Profile picture placeholder" >
-					<p class=" text-center mt-3 ">Lorem Ipsum</p>
+				<div class= "inline-block mx-10 mt-10 p-6 h-72 w-52">
+					<!--This is a link that leads to Linkedin, shown as a profile image. href="" is the link, and target="_blank" sets it so that when the link is opened, it opens in a new tab. inline-block allows the div to be on the same line as other divs. bg-[url()] sets the default background image, hover:bg-[url()] sets the image when the user hovers (linkedin.jpg is just an image that says "in"). hover:cursor-pointer sets it so that when the user hovers, the cursor will become a pointer. h- and w- sets the size of the div. bg-cover sets it so that images in the div don't stretch. rounded-full makes it a circle, and mx-auto centres the div/link -->
+					<a href="https://www.linkedin.com/in/vennela-puvvula-a04066273/" target="_blank" class="inline-block bg-[url('../images/image_1.jpg')] hover:bg-[url('../images/linkedin.jpg')] hover:cursor-pointer bg-cover h-40 w-40 rounded-full mx-auto" ></a>
+					<!--This is another link that leads to LinkedIn, except that it's text. text-center centres the text to the middle of the div, mt-3 sets the top margin to 3. hover:text-website-orange changes the text colour to the custom orange when hovering, and hover:underline makes the text underlined. target="_blank" sets it so that when the link is opened, it opens in a new tab-->
+					<p class=" text-center mt-3 hover:text-website-orange hover:underline"><a href="https://www.linkedin.com/in/vennela-puvvula-a04066273/" target="_blank" >Vennela Puvvula</a></p>
+
 					
 				</div>
-				<div class= "inline-block   mx-10 mt-10 p-6 h-72 w-52">
-					<img class="h-40 w-40 rounded-full object-cover mx-auto" src="images/image_1.jpg" alt="Profile picture placeholder" >
-					<p class=" text-center mt-3 ">Lorem Ipsum</p>
+				<div class= "inline-block mx-10 mt-10 p-6 h-72 w-52">
+					<!--This is a link that leads to Linkedin, shown as a profile image. href="" is the link, and target="_blank" sets it so that when the link is opened, it opens in a new tab. inline-block allows the div to be on the same line as other divs. bg-[url()] sets the default background image, hover:bg-[url()] sets the image when the user hovers (linkedin.jpg is just an image that says "in"). hover:cursor-pointer sets it so that when the user hovers, the cursor will become a pointer. h- and w- sets the size of the div. bg-cover sets it so that images in the div don't stretch. rounded-full makes it a circle, and mx-auto centres the div/link -->
+					<a href="https://www.linkedin.com/in/jshinmar/" target="_blank" class="inline-block bg-[url('../images/image_1.jpg')] hover:bg-[url('../images/linkedin.jpg')] hover:cursor-pointer bg-cover h-40 w-40 rounded-full mx-auto" ></a>
+					<!--This is another link that leads to LinkedIn, except that it's text. text-center centres the text to the middle of the div, mt-3 sets the top margin to 3. hover:text-website-orange changes the text colour to the custom orange when hovering, and hover:underline makes the text underlined. target="_blank" sets it so that when the link is opened, it opens in a new tab-->
+					<p class=" text-center mt-3 hover:text-website-orange hover:underline"><a href="https://www.linkedin.com/in/jshinmar/" target="_blank" >Joshua Shinmar</a></p>
+
+					
 				</div>
+				
+				<!--This is a placeholder div for the profile. inline-block allows it to be on the same line as other divs, mx-10 sets the margin on the x axis to 10, mt-10 sets the top margin to 10, p-6 sets the padding to 6, h-72 and w-52 set the height and width-->
 				<div class= "inline-block   mx-10 mt-10 p-6 h-72 w-52">
+					<!--This is the image. h-40 and w-40 set the size rounded-full makes the image a circle, object-cover sets it so that the image covers/fills and doesn't stretch. mx-auto centres it. src="" leads to the source of the image. alt="" sets the alt text of the image, which will show if it doesn't load and will be read by screenreaders/ -->
 					<img class="h-40 w-40 rounded-full object-cover mx-auto" src="images/image_1.jpg" alt="Profile picture placeholder" >
+					<!--This is the text. text-center centres the text. mt-3 sets the top margin to 3. -->
 					<p class=" text-center mt-3 ">Lorem Ipsum</p>
 				</div>
 				<div class= "inline-block   mx-10 mt-10 p-6 h-72 w-52">

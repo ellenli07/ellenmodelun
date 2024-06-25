@@ -660,13 +660,25 @@ video {
   border-radius: 0.5rem;
 }
 
+.bg-\[url\(\'\.\.\/images\/image_1\.jpg\'\)\] {
+  background-image: url('../images/image_1.jpg');
+}
+
+.bg-\[url\(\)\] {
+  background-image: url();
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.p-5 {
-  padding: 1.25rem;
+.p-10 {
+  padding: 2.5rem;
 }
 
 .p-6 {
@@ -945,14 +957,23 @@ img.displaySlide{
   cursor: pointer;
 }
 
+.hover\:bg-\[url\(\'\.\.\/images\/linkedin\.jpg\'\)\]:hover {
+  background-image: url('../images/linkedin.jpg');
+}
+
+.hover\:bg-\[url\(\)\]:hover {
+  background-image: url();
+}
+
+.hover\:text-website-orange:hover {
+  --tw-text-opacity: 1;
+  color: rgb(243 159 131 / var(--tw-text-opacity));
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
 
 .hover\:opacity-75:hover {
   opacity: 0.75;
-}
-
-.hover\:opacity-70:hover {
-  opacity: 0.7;
 }

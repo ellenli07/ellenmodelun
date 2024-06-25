@@ -3,6 +3,14 @@ module.exports = {
   content: ['./build/*.htm'],
   theme: {
     extend: {
+      //This adds a custom background colour, which in this case is the website's main orange.
+      backgroundColor: {
+        'website-orange': '#f39f83', 
+      },
+      //This adds a custom text colour, which is also the orange.
+      textColor:{
+        'website-orange': '#f39f83',
+      },
       keyframes: {
         //This sets the keyframes of the slide animation.
         slidein: {

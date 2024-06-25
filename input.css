@@ -7,7 +7,7 @@
 /*This is the styling of the off-screen menu in a class*/
 .off-screen-menu{
 	/*sets the background colour to lightgrey*/
-	background-color: #B4C5E4;
+	background-color: #f39f83;
 	/*stes the colour of the text*/
 	color:#f7f8ff;
 	/*Sets the height to be 100% of the visible height of the screen*/
@@ -24,12 +24,13 @@
 	/*this aligns the child elements automatically to the cetreinto columns with automatic widths and heights*/
 	display:flex;
 	flex-direction:column;
-	align-items:left;
-	padding: 20vh;
+	padding: 15vh 8.5vw;
 	/*This sets the font-size to be 3 times of the root font size*/
 	font-size: 2rem;
 	/*Controls animation speed*/
 	transition: .3s ease;
+	/*sets order to be at the front layer*/
+	z-index: 1;
 }
 
 /*styles the offscreen menu when it is active/clicked*/
@@ -45,7 +46,7 @@ nav{
 	/*aligns the child elements  automatically*/
 	display:flex;
 	/*sets the colour of the nav bar to dark grey*/
-	background-color: #2E6ED5;
+	background-color: #f39f83;
 }
 
 /*This sets the ham menu (this is actually an invisible square that contains the spans*/
@@ -57,6 +58,8 @@ nav{
 	margin-left:auto;
 	/*the position will change when the user scrolls*/
 	position: relative;
+	/*sets order to be at the front layer*/
+	z-index: 1;
 }
 
 /*sets the styling of the white ham menu bars*/
@@ -78,6 +81,8 @@ nav{
 	/*sets smooth animation when the spans move when clicked*/
 	transition: .3s ease;
 	display:flex;
+	/*sets order to be at the front layer*/
+	z-index: 1;
 }
 
 /*This targets the first span of the hamburger menu and places it slightly higher*/
@@ -105,8 +110,82 @@ nav{
 	top:50%;
 	transform:translate(-50%, -50%) rotate(-45deg);
 }
-
+/*Sets the styling for the body-- offwhite background, and the font-family is set to Poppins.*/
 body{
 	background-color:#f7f8ff; 
 	font-family: "Poppins";
+}
+
+/*sets the styling for the slider class*/
+.slider{
+	/*items move relative to position*/
+	position: relative;
+	/*sets the width of the slider to 85% of the width of the page*/
+	width: 85%;
+	/*centres the slider, while setting the to and bottom margin to 2 rem*/
+	margin: 2rem auto;
+	/*if images are too large, the overflow will be hidden*/
+	overflow: hidden;
+
+}
+/*sets the styling of the images in the slider*/
+.slider img{
+	/*sets width to 100*/
+	width:100%;
+	/*images are not displayed*/
+	display:none;
+}
+
+/*displays the image to show/display as a block if it has this class*/
+img.displaySlide{
+	display:block;
+	/*uses the fade animation*/
+	animation-name:fade;
+	/*sets the duration of the animation to 1.5s*/
+	animation-duration:1.5s;
+}
+
+/*select all buttons in the slider*/
+.slider button{
+	/*positiions relative to parent*/
+	position:absolute;
+	/*will be positioned in the middle on the y axis (aka middle of the height of the slider*/
+	top:50%;
+	/*positions the centre of the button at the middle of the height*/
+	transform:translateY(-50%);
+	/*sets the font to 2rem (root element)*/
+	font-size: 2rem;
+	/*adds padding aka room around the arrows in the boxes*/
+	padding: 10px 15px;
+	/*sets the background colour to grey*/
+	background-color: rgb(126, 126, 126);
+	/*sets the arrows themselves to white*/
+	color:white;
+	/*removes the border of the buttons*/
+	border:none;
+	/*makes the cursor a pointer when hovering*/
+	cursor: pointer;
+
+}
+/*selects the prev class*/
+.prev{
+	/*aligns the previous button on the very left*/
+	left:0;
+}
+
+/*selects the next class*/
+.next{
+	/*aligns the next button to the very right*/
+	right:0;
+}
+/*sets animation called fade*/
+@keyframes fade{
+	/*starts transparent*/
+	from {opacity: .5};
+	/*ends opaque*/
+	to {opacity: 1};
+}
+
+.white-text{
+	color: #f7f8ff;
 }
