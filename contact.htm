@@ -36,15 +36,22 @@
 				</div>
 			</nav>
 
-			<!-- this makes a big heading with a slide-in animation, opacity set to 0 at first so it's not showing. slideindelay sets the delay,  flex makes it alignable, justify-centre centres the items horizontally-->
+			<!-- this makes a big heading with a slide-in animation, opacity set to 0 at first so it's not showing. slideindelay sets the delay,  flex makes it alignable, justify-center centres the items horizontally-->
 
 			<div class= "animate-slidein opacity-0 [--slidein-delay:300ms] flex justify-center pt-20">
 				<h1 class="text-6xl">Contact</h1>
 			</div>
 			<!--these are divs for the contact info, font is smaller and slide in delay is slightly staggered. justify-center centres the divs, and text-center aligns the text to the centre. mt- sets the top margin-->
 			<div class= "animate-slidein opacity-0 [--slidein-delay:500ms] flex justify-center mt-20 w-screen text-center">
+				<!--This is a mail icon that opens the user's mail app. the link after href is mailto:, which opens the mail app and addresses it to the email address put after. h-40 and w-40 set the height and the width. rounded-lg rounds the corners of the icon. object-cover covers the element with the image instead of stretching. inline-block allows it to be on the same line as other elements. mx- sets the margin on the horizontal and mt- sets the top margin. hover:cursor-pointer sets the cursor to a pointer when hovering, hover:opacity-75 sets the opacity to be lower when hovering -->
+				<a href="mailto:bennypan@rhs.school.nz"><img class="h-40 w-40 rounded-lg object-cover inline-block mx-10 hover:cursor-pointer mt-10 hover:opacity-75" src="images\287692_mail_icon.png" alt="Link to UN Youth Information" ></a>
+			</div>
+
+			<!--These are divs for the contact information. animate-sidein adds a slide in animation, and opacity-0 and [--slidein-delay:;500ms] sets when the animation begins. Flex makes it alignable, and justify-center centres the items horizontally. mt-20 sets the top margin to 20. w-screen sets the width of the div to the same as the width of the screen, text-center sets the text to the centre of the div  -->
+			<div class= "animate-slidein opacity-0 [--slidein-delay:500ms] flex justify-center mt-20 w-screen text-center">
 				<p class="text-3xl">Gmail: wqldksnk@gmail.com </p>
 			</div>
+
 			<div class= "animate-slidein opacity-0 [--slidein-delay:700ms] flex justify-center mt-10 w-screen text-center">
 				<p class="text-3xl"> Phone: 0210183728</p>
 			</div>
